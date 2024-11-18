@@ -1,9 +1,16 @@
-.header__logo {
+.container{
+    position: relative;
+    transform: translate(82px, 0px);
+}
+
+.logo{
     position: relative;
     transform: translate(0px, 12px);
 }
 
 .logo__snowflake {
+    width: 24px;
+    height: 24px;
     position: absolute;
     transform: translate(20px, 8px);
 }
@@ -14,8 +21,43 @@
 }
 
 .logo__text {
-    font-family: 'Action Small';
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    font-weight: 550;
     color: #1E1E1E;
     text-transform: uppercase;
+}
+
+
+.header__logo {
+    position: relative;
+    transform: translate(153px, 12px);
+}
+
+.nav__list {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    transform: translate(747px, 0px);
+}
+
+.nav__item {
+    list-style: none;
+    position: relative;
+    padding: 20px 12px;
+}
+
+.nav__link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 1.2;
+    color: #1E1E1E;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #FF0000;
 }
