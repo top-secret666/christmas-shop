@@ -1,0 +1,21 @@
+.header__logo {
+    position: relative;
+    transform: translate(0px, 12px);
+}
+
+.logo__snowflake {
+    position: absolute;
+    transform: translate(20px, 8px);
+}
+
+.logo__gifts {
+    position: absolute;
+    transform: translate(52px, 12px);
+}
+
+.logo__text {
+    font-family: 'Action Small';
+    font-size: 14px;
+    color: #1E1E1E;
+    text-transform: uppercase;
+}
