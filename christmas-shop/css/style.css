@@ -1,23 +1,29 @@
-.container{
-    position: relative;
-    transform: translate(82px, 0px);
+/* header */
+header {
+    background-color: white;
+    padding: 20px 0;
 }
 
-.logo{
-    position: relative;
-    transform: translate(0px, 12px);
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo__snowflake {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    transform: translate(20px, 8px);
+    margin-right: 10px;
 }
 
 .logo__gifts {
-    position: absolute;
-    transform: translate(52px, 12px);
+    margin-right: 10px;
 }
 
 .logo__text {
@@ -28,23 +34,12 @@
     text-transform: uppercase;
 }
 
-
-.header__logo {
-    position: relative;
-    transform: translate(153px, 12px);
-}
-
 .nav__list {
     display: flex;
     gap: 40px;
-    position: absolute;
-    transform: translate(747px, 0px);
-}
-
-.nav__item {
     list-style: none;
-    position: relative;
-    padding: 20px 12px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav__link {
