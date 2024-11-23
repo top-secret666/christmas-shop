@@ -1,10 +1,16 @@
+body {
+    background-color: #f84747;
+    margin: 0;
+    padding: 0;
+}
+
 /* header */
 header {
     background-color: white;
     padding: 20px 0;
 }
 
-.container {
+.container__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,5 +60,86 @@ header {
 }
 
 .nav__link:hover {
-    color: #FF0000;
+    color: #f84747;
+}
+
+/* About */
+.about__section {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 64px 0;
+    overflow: hidden;
+    background-image: url('../assets/img/bg-snow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container__about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-width: 400px;
+    max-width: 750px;
+    padding: 80px 120px 0px 40px;
+    background-color: #ffffff;
+    border-radius: 12px 0 0 12px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.about__caption {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f84747;
+    margin-bottom: 12px;
+}
+
+.about__header {
+    font-size: 32px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.about__paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: 400;
+}
+
+.about__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 600px;
+    min-width: 550px;
+    border-radius: 0 12px 12px 0;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0 12px 12px 0;
 }
