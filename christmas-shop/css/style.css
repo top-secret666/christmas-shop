@@ -2,11 +2,13 @@ body {
     background-color: #f84747;
     margin: 0;
     padding: 0;
+    background-image: url('../assets/img/bg-snow.png');
+    background-size: cover;
 }
 
 /* header */
 header {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px 0;
 }
 
@@ -33,7 +35,7 @@ header {
 }
 
 .logo__text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 550;
     color: #1E1E1E;
@@ -49,7 +51,7 @@ header {
 }
 
 .nav__link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 550;
     line-height: 1.2;
@@ -63,6 +65,55 @@ header {
     color: #f84747;
 }
 
+/* Hero */
+.hero__section {
+    display: flex;
+    justify-content: center;
+    max-height: 520px;
+    background-position: center;
+    background-image: url('../assets/img/bg-ball.png');
+    background-size: cover;
+}
+
+.container__hero {
+    text-align: center;
+    padding: 80px 40px 200px 40px;
+}
+
+.caption {
+    font-size: 26px;
+    font-family: 'Allura', cursive;
+    color: #ffffff;
+    margin-bottom: -7px;
+}
+
+h1 {
+    font-size: 34px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 br {
+    display: block;
+}
+
+.button {
+
+    background-color: #333;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: -7px;
+}
+
 /* About */
 .about__section {
     display: flex;
@@ -70,17 +121,14 @@ header {
     text-align: left;
     padding: 64px 0;
     overflow: hidden;
-    background-image: url('../assets/img/bg-snow.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
+
 
 .container__about {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1276px;
     margin: 0 auto;
 }
 
@@ -101,8 +149,8 @@ header {
 
 
 .about__caption {
-    font-family: 'Dancing Script', cursive;
-    font-size: 18px;
+    font-family: 'Allura', cursive;
+    font-size: 20px;
     font-weight: 700;
     color: #f84747;
     margin-bottom: 12px;
@@ -138,7 +186,7 @@ header {
 }
 
 .image {
-    width: 100%;
+    width: 550px;
     height: auto;
     display: block;
     border-radius: 0 12px 12px 0;
