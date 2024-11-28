@@ -34,7 +34,7 @@
                         <a href="#about__section" class="nav__link">about</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">best</a>
+                        <a href="#best-gifts__section" class="nav__link">best</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">contacts</a>
@@ -47,7 +47,7 @@
     <section class="hero__section">
         <div class="container__hero">
             <p class="caption">Merry Christmas</p>
-            <h1>gift yourself <br> the magic of new <br> possibilities</h1>
+            <h1 class="hero__header">gift yourself <br> the magic of new <br> possibilities</h1>
             <button class="button">explore magical gifts</button>
             <p class="caption">and Happy New Year.</p>
         </div>
@@ -55,11 +55,14 @@
 
     <section id="about__section" class="about__section">
         <div class="container__about">
-            <div class="about__text">
-                <div class="caption__about">About</div>
-                <h2>unleash your inner superhero!</h2>
-                <p class="about__paragraph">This New Year marks the beginning of your journey to inner harmony and new
-                    strengths. We offer unique gifts that will help you improve your life.</p>
+            <div class="container__text">
+                <div class="about__text">
+                    <div class="about__caption">About</div>
+                    <h2 class="about__header">unleash your inner superhero!</h2>
+                    <p class="about__paragraph">This New Year marks the beginning of your journey to inner harmony and
+                        new
+                        strengths. We offer unique gifts that will help you improve your life.</p>
+                </div>
             </div>
 
             <div class="about__image">
@@ -70,7 +73,7 @@
 
     <section class="slider__section">
         <div class="container__slider">
-            <div class="container__text">
+            <div class="slider-container__text">
                 <div class="caption">Become Happier!</div>
                 <h1>in the new 2025</h1>
             </div>
@@ -78,13 +81,13 @@
             <div id="slider__row" class="slider__row">
                 <div class="slider">
                     <div class="slider__text">live</div>
-                    <div class="image__container"><img src="assets/img/snowman.png" alt="snowman"></div>
+                    <div class="image__container"><img src="assets/img/snowman.png"></div>
                     <div class="slider__text">create</div>
-                    <div class="image__container"><img src="assets/img/christmas-trees.png" alt="christmas-trees"></div>
+                    <div class="image__container"><img src="assets/img/christmas-trees.png"></div>
                     <div class="slider__text">love</div>
-                    <div class="image__container"><img src="assets/img/christmas-tree-ball.png" alt="christmas-tree-ball"></div>
+                    <div class="image__container"><img src="assets/img/christmas-tree-ball.png"></div>
                     <div class="slider__text">dream</div>
-                    <div class="image__container"><img src="assets/img/fairytale-house.png" alt="fairytale-house"></div>
+                    <div class="image__container"><img src="assets/img/fairytale-house.png"></div>
                 </div>
             </div>
 
@@ -105,10 +108,57 @@
         </div>
     </section>
 
+    <section id="best-gifts__section" class="best-gifts__section">
+        <div class="container__best">
+            <div class="best__text">
+                <div class="caption">Best Gifts</div>
+                <h1>especially for you</h1>
+            </div>
+
+            <div class="container__cards">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/img/gift-for-work.png" alt="Console.log Guru">
+                    </div>
+                    <div class="card-details">
+                        <h4>for work</h4>
+                        <h3>console.log guru</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/img/gift-for-health.png" alt="Hydration Bot">
+                    </div>
+                    <div class="card-details">
+                        <h4 style="color: #06A44F">for health</h4>
+                        <h3>hydration bot</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/img/gift-for-work.png" alt="Merge Master">
+                    </div>
+                    <div class="card-details">
+                        <h4>for work</h4>
+                        <h3>merge master</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/img/gift-for-harmony.png" alt="Spontaneous Coding Philosopher">
+                    </div>
+                    <div class="card-details">
+                        <h4 style="color: #FF43F7">for harmony</h4>
+                        <h3>spontaneous coding philosopher</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script>
     const ширина = window.innerWidth, высота = window.innerHeight;
-console.log(`Окно просмотра: ${ширина} x ${высота}`); // Выводим размеры окна просмотра в консоль
+    console.log(`Окно просмотра: ${ширина} x ${высота}`); // Выводим размеры окна просмотра в консоль
 </script>
 
 </html>
