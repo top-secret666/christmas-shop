@@ -1098,7 +1098,12 @@ footer {
     letter-spacing: 0.08em;
     text-transform: uppercase;
 
-    color: #181C29;
+    color: #181C29 !important;
+    font-size: 13px !important;
+    line-height: 152% !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    position: relative !important;
 
     box-sizing: border-box;
 }
