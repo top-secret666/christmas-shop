@@ -261,6 +261,45 @@
         </div>
     </footer>
     </div>
+    <script>
+        // Align the Best Gifts text block to the actual visible cards group, not the full container width.
+        (function () {
+            function alignBestHeadline() {
+                const cards = Array.from(document.querySelectorAll('.container__cards .card'));
+                const bestText = document.querySelector('.best__text');
+                const parent = document.querySelector('.container__best');
+
+                if (!cards.length || !bestText || !parent) {
+                    return;
+                }
+
+                const firstCardRect = cards[0].getBoundingClientRect();
+                const lastCardRect = cards[cards.length - 1].getBoundingClientRect();
+                const parentRect = parent.getBoundingClientRect();
+                const visibleCardsCenter = ((firstCardRect.left + lastCardRect.right) / 2) - parentRect.left;
+
+                bestText.style.position = 'absolute';
+                bestText.style.left = visibleCardsCenter + 'px';
+                bestText.style.transform = 'translateX(-50%)';
+                bestText.style.top = '-64px';
+                bestText.style.width = 'max-content';
+                bestText.style.maxWidth = 'none';
+                bestText.style.margin = '0';
+            }
+
+            window.addEventListener('load', alignBestHeadline);
+            window.addEventListener('resize', alignBestHeadline);
+
+            const cardsRow = document.querySelector('.container__cards');
+            if (cardsRow && window.ResizeObserver) {
+                const observer = new ResizeObserver(alignBestHeadline);
+                observer.observe(cardsRow);
+            }
+
+            window.setTimeout(alignBestHeadline, 300);
+            window.setTimeout(alignBestHeadline, 800);
+        })();
+    </script>
 </body>
 
 </html>
