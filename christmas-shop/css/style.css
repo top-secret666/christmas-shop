@@ -546,14 +546,21 @@ h1 {
     margin: 0 auto;
 }
 
+.container__best {
+    text-align: center;
+}
+
 .best__text {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 12px;
-    width: 426px;
-    max-width: 426px;
+    width: 100%;
+    max-width: 1276px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
 }
 
 /* Style for "especially for you" headline in Best Gifts */
@@ -562,13 +569,18 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.12em;
     line-height: 1.05;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
-    max-width: 760px;
+    max-width: none;
     word-break: normal;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
 }
 
 /* ensure the cards row sits lower than the heading */
@@ -585,7 +597,9 @@ h1 {
     align-content: center;
 
     gap: 12px;
-    width: 89%;
+    width: 1276px;
+    margin: 0 auto;
+    margin-top: 84px; /* ensure cards sit below the absolutely positioned heading */
 }
 
 .card {
