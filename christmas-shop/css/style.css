@@ -696,6 +696,33 @@ h4 {
     box-sizing: border-box;
 }
 
+.card-details .card-category {
+    width: 100%;
+    height: 16px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #4361FF;
+
+    box-sizing: border-box;
+}
+
+.timer-label {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 /* CTA */
 .cta__section {
     display: flex;
@@ -865,7 +892,7 @@ footer {
     cursor: url("../assets/img/red-bow-christmas-bell-3D-pointer-32x32.png"), pointer !important;
 }
 .container-footer:hover h3,
-.container-footer:hover h5 {
+.container-footer:hover .action-large {
     color: #FF4646;
     cursor: url("../assets/img/red-bow-christmas-bell-3D-pointer-32x32.png"), pointer !important;
 }
@@ -1056,4 +1083,22 @@ footer {
 
 .slider__section {
     padding-bottom: 100px; /* add space below slider so next section doesn't overlap */
+}
+
+/* styling for gift titles when using h2 on gifts page */
+.card-details h2 {
+    width: 100%;
+    height: 34px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 152%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #181C29;
+
+    box-sizing: border-box;
 }
