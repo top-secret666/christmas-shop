@@ -39,8 +39,42 @@
                     </li>
                 </ul>
             </div>
+            <button class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="home.html" class="burger-link">home</a></li>
+            <li><a href="#about__section" class="burger-link">about</a></li>
+            <li><a href="#best-gifts__section" class="burger-link">best</a></li>
+            <li><a href="#contacts" class="burger-link">contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="modal-overlay"></div>
+        <div class="modal" role="dialog" aria-modal="true">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="" alt="">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-category"></div>
+                    <div class="modal-title"></div>
+                    <div class="modal-description"></div>
+                    <div class="modal-superpowers">
+                        <p class="modal-superpowers-label">adds superpowers to:</p>
+                        <div class="modal-superpowers-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <button class="scroll-to-top">↑</button>
 
     <main>
         <section class="gifts__section">
@@ -231,6 +265,7 @@
         </div>
     </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
